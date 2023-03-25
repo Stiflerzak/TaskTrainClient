@@ -110,7 +110,7 @@ const LandingPage = () => {
           <FormButton>Log In</FormButton>
         </LoginCard>
         <ScreenshotCard>
-          Visual Representation of this app
+          <p align= 'center' >Welcome to TaskTrain</p>
           <ScreenshotImage src={todoListImage} alt="Todo List" />
         </ScreenshotCard>
       </MainContainer>
