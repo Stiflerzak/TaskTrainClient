@@ -1,17 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import todoListImage from '../assets/todo-list-svgrepo-com.svg';
 
 const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color:  #00003B;
+  background-color: #00003B;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 `;
 
-const Logo = styled.img`
-  height: 50px;
+const Title = styled.h1`
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
 `;
 
 const Button = styled.button`
@@ -19,6 +25,7 @@ const Button = styled.button`
   background-color: #BC8F8F;
   color: #fff;
   padding: 0.5rem 1rem;
+  border-radius: 50%;  
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -34,7 +41,6 @@ const MainContainer = styled.div`
   align-items: center;
   height: calc(100vh - 64px);
   background-color: #F2EAF2;
-  ;
 `;
 
 const LoginCard = styled.div`
@@ -76,12 +82,21 @@ const ScreenshotCard = styled.div`
   height: 400px;
   border-radius: 4px;
 `;
+const ScreenshotImage = styled.img`
+text-align: center;
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar>
-        <Logo src="tasktrain-logo.png" alt="TaskTrain logo" />
+        <Title>TaskTrain</Title>
         <div>
           <Button>Sign Up</Button>
           <Button>Log In</Button>
@@ -95,7 +110,8 @@ const LandingPage = () => {
           <FormButton>Log In</FormButton>
         </LoginCard>
         <ScreenshotCard>
-        Visual Representation of this app
+          Visual Representation of this app
+          <ScreenshotImage src={todoListImage} alt="Todo List" />
         </ScreenshotCard>
       </MainContainer>
     </div>
