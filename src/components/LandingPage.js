@@ -36,12 +36,13 @@ const Button = styled.button`
 `;
 
 const MainContainer = styled.div`
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   height: calc(100vh - 64px);
   background-color: #F2EAF2;
-`;
+  min-height: 100vh;
+  `;
 
 const LoginCard = styled.div`
   display: flex;
@@ -91,6 +92,18 @@ display: flex;
 justify-content: center;
 align-items: center;
 `;
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color: #00003B;
+  color: #fff;
+  position: fixed; /* Position the footer at the bottom of the screen */
+  bottom: 0;
+  width: 100%;
+`;
+
 
 const LandingPage = () => {
   return (
@@ -114,6 +127,9 @@ const LandingPage = () => {
           <ScreenshotImage src={todoListImage} alt="Todo List" />
         </ScreenshotCard>
       </MainContainer>
+      <Footer>
+      <p>&copy; 2023 TaskTrain. All rights reserved.</p>
+    </Footer>
     </div>
   );
 };
