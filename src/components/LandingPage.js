@@ -6,7 +6,7 @@ const Navbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #ffccd5;
+  background-color:  #00003B;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 `;
 
@@ -33,6 +33,8 @@ const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: calc(100vh - 64px);
+  background-color: #F2EAF2;
+  ;
 `;
 
 const LoginCard = styled.div`
@@ -45,6 +47,8 @@ const LoginCard = styled.div`
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   width: 400px;
   margin-right: 2rem;
+  background-color: #ecdfec;
+
 `;
 
 const CardTitle = styled.h2`
@@ -66,7 +70,7 @@ const FormButton = styled(Button)`
 `;
 
 const ScreenshotCard = styled.div`
-  background-color: #fff;
+  background-color: #ecdfec;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   width: 400px;
   height: 400px;
