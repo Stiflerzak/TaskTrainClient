@@ -16,7 +16,7 @@ const Logo = styled.img`
 
 const Button = styled.button`
   border: none;
-  background-color: #0077b6;
+  background-color: #BC8F8F;
   color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -24,7 +24,7 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #023e8a;
+    background-color: #FA8072;
   }
 `;
 
