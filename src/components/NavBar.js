@@ -8,10 +8,15 @@ const Nav = styled.nav`
   background-color: #00003B;
   height: 80px;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 `;
 
 const Logo = styled.h1`
   color: #fff;
+  margin: 0;
 `;
 
 const Avatar = styled.img`
