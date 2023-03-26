@@ -18,23 +18,21 @@ const AvatarImg = styled.img`
   border-radius: 50%;
 `;
 
-const Name = styled.h2`
-  margin: 10px 0;
-  font-size: 20px;
-  font-weight: bold;
-`;
-
 const Label = styled.p`
   margin: 0;
   font-size: 16px;
+  font-weight: bold;
 `;
 
-const Profile = ({ name, label }) => {
+const Profile = ({ name, username, email }) => {
   return (
     <Card>
       <AvatarImg src={Avatar} alt="Avatar" />
-      <Name>{name}</Name>
-      <Label>{label}</Label>
+      <Label>Profile:</Label>
+      <Label>Username:</Label>
+      <p>{username}</p>
+      <Label>Email:</Label>
+      <p>{email}</p>
     </Card>
   );
 };
