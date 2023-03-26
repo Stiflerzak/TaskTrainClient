@@ -19,19 +19,15 @@ This application has been built with the following tools:
 - styled component
 
 ## Setup
-This project is private, This means I have to add you as a contributor.
 
 You can setup this repository by following this manual
 
 1. Clone the repository
     
-       git clone ggit@github.com:Stiflerzak/Project_Management_-App.git
-   
-2. Ensure you navigate to the correct directory
-    
-        cd Project_Management_-App/
+       git@github.com:Stiflerzak/TaskTrainClient.git   
+
   
-3. Run the application
+2. Run the application
    
          npm start
     
@@ -43,19 +39,14 @@ You can setup this repository by following this manual
 ## Application
 This application is hosted hence accessible through this link:
 
-https://project-management-app-ecru.vercel.app/
+https://task-train-client-eta.vercel.app/
 
 
-The User can,
-1. see all projects displayed
-2. add a new project
-3. update an existing project
-4. delete a project
- 
  This project is still work in progress, 
 
  Am working to improve this app in a better one
 
+i need to add routes so that one can start my login in
 
 
 ## LICENSE
