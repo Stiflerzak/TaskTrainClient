@@ -4,6 +4,7 @@ import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Profile from '../components/Profile';
 import NewTaskForm from '../components/Newtask';
+import Tasklist from '../components/Tasklist';
 
 const DashboardContainer = styled.div`
   display: flex;
@@ -64,6 +65,8 @@ const Dashboard = ({ user }) => {
         </NewTaskCard>
         <ProjectCard>
           <h2>Projects</h2>
+          
+
         </ProjectCard>
       </CardsContainer>
       <Footer />

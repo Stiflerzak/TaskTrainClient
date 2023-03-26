@@ -26,28 +26,25 @@ const TimeCreated = styled.p`
   color: #999;
 `;
 
-const EditButton = styled.button`
+const Button = styled.button`
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+`;
+
+const EditButton = styled(Button)`
   background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 16px;
   margin-right: 8px;
-  cursor: pointer;
 `;
 
-const DeleteButton = styled.button`
+const DeleteButton = styled(Button)`
   background-color: #f44336;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
 `;
 
-const Tasklist = ({ projects }) => {
+const TaskList = ({ projects }) => {
   return (
     <div>
       {projects.map((project) => (
@@ -63,4 +60,7 @@ const Tasklist = ({ projects }) => {
   );
 };
 
-export default Tasklist;
+export default TaskList;
+
+
+ 
