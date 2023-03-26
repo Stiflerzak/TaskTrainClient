@@ -29,6 +29,15 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const Select = styled.select`
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+`;
+
+const Option = styled.option``;
+
 const NewTaskForm = ({ onSubmit }) => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -58,18 +67,18 @@ const NewTaskForm = ({ onSubmit }) => {
       <Input type="date" id="deadline" name="deadline" value={deadline} onChange={(e) => setDeadline(e.target.value)} required />
 
       <Label htmlFor="status">Status:</Label>
-      <select id="status" name="status" value={status} onChange={(e) => setStatus(e.target.value)}>
-        <option value="To Do">To Do</option>
-        <option value="In Progress">In Progress</option>
-        <option value="Done">Done</option>
-      </select>
+      <Select id="status" name="status" value={status} onChange={(e) => setStatus(e.target.value)} required>
+        <Option value="To Do">To Do</Option>
+        <Option value="In Progress">In Progress</Option>
+        <Option value="Done">Done</Option>
+      </Select>
 
       <Label htmlFor="priority">Priority:</Label>
-      <select id="priority" name="priority" value={priority} onChange={(e) => setPriority(e.target.value)}>
-        <option value="Low">Low</option>
-        <option value="Medium">Medium</option>
-        <option value="High">High</option>
-      </select>
+      <Select id="priority" name="priority" value={priority} onChange={(e) => setPriority(e.target.value)} required>
+        <Option value="Low">Low</Option>
+        <Option value="Medium">Medium</Option>
+        <Option value="High">High</Option>
+      </Select>
 
       <Button type="submit">Add Task</Button>
     </form>
