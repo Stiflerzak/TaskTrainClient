@@ -27,8 +27,8 @@ const Label = styled.p`
 const Profile = ({ name, username, email }) => {
   return (
     <Card>
-      <AvatarImg src={Avatar} alt="Avatar" />
-      <Label>Profile:</Label>
+      <Label>Profile</Label>
+      <AvatarImg src={Avatar} alt="Avatar" />     
       <Label>Username:</Label>
       <p>{username}</p>
       <Label>Email:</Label>
