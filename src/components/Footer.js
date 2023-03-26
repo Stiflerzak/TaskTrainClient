@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <p>&copy; {currentYear} Your Company Name. All rights reserved.</p>
+      <p>&copy; {currentYear} Hilary Kariuki. All rights reserved.</p>
     </FooterContainer>
   );
 };
