@@ -7,6 +7,7 @@ const DashboardContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #F2EAF2;
 `;
 
 const UpperSection = styled.div`
@@ -21,6 +22,8 @@ const CardsContainer = styled.div`
   padding: 20px;
   gap: 20px;
 `;
+
+
 
 const Dashboard = ({ user }) => {
   return (
