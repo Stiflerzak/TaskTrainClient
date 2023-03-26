@@ -14,7 +14,7 @@ In order to use this repository you will need the following:
 ## Built With
 This application has been built with the following tools:
 
--reactJs
+- reactJs
 
 - styled component
 
@@ -46,7 +46,7 @@ https://task-train-client-eta.vercel.app/
 
  Am working to improve this app in a better one
 
-i need to add routes so that one can start my login in
+I need to add routes so that one can start my login in
 
 
 ## LICENSE
